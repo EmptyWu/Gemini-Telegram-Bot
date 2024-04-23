@@ -1,0 +1,8 @@
+services:
+  gemini-bot:
+    build: .
+    container_name: gemini_tg_bot
+    environment:
+      - TELEGRAM_BOT_API_KEY={Telegram 机器人 API}
+      - GEMINI_API_KEYS={Gemini API 密钥}
+    restart: always
